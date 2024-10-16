@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Customers</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<div class="nav-container">
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-left">
+        <span id="userName"></span>
+      </div>
+      <div class="navbar-right">
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="actions">
+    <button id="addCustomerBtn">Add Customer</button>
+    <button id="syncBtn">Sync</button>
+    <div>
+      <label for="searchBy"></label><select id="searchBy">
+      <option value="">Search By</option>
+      <option value="firstName">First Name</option>
+      <option value="city">City</option>
+      <option value="email">Email</option>
+      <option value="phone">Phone</option>
+    </select>
+      <label for="searchBar"></label><input class="hidden" id="searchBar" placeholder="Search..." type="text">
+      <button class="hidden" id="searchBtn">Search</button>
+    </div>
+  </div>
+
+  <div class="form hidden" id="customerForm">
+    <form id="addCustomer">
+      <h3 id="formTitle">Add Customer</h3>
+      <input id="uuid" type="hidden"> <!-- Hidden field to store customer ID for editing -->
+      <label for="firstName">First Name:</label>
+      <input id="firstName" name="firstName" required type="text">
+      <label for="lastName">Last Name:</label>
+      <input id="lastName" name="lastName" required type="text">
+      <label for="street">Street:</label>
+      <input id="street" name="street" required type="text">
+      <label for="address">Address:</label>
+      <input id="address" name="address" required type="text">
+      <label for="city">City:</label>
+      <input id="city" name="city" required type="text">
+      <label for="state">State:</label>
+      <input id="state" name="state" required type="text">
+      <label for="email">Email:</label>
+      <input id="email" name="email" required type="email">
+      <label for="phone">Phone:</label>
+      <input id="phone" name="phone" required type="text">
+      <button type="submit">Save Customer</button>
+    </form>
+  </div>
+
+  <table>
+    <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Street</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="customerTable">
+    <!-- Customer rows will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <div id="paginationControls">
+    <button onclick="previousPage()">Previous</button>
+    <span id="pageInfo"></span>
+    <button onclick="nextPage()">Next</button>
+  </div>
+</div>
+
+<script src="/js/index.js"></script>
+</body>
+</html>
