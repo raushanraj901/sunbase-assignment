@@ -87,7 +87,7 @@ The Customer Management System is a comprehensive web application designed to ef
   "password": "Test@123"
 }
 ```
-![img](https://github.com/sunbase-assignment/blob/main/images/2.png)
+![img](https://github.com/raushanraj901/sunbase-assignment/blob/main/images/2.png)
 
 ### Add New Customer
 
@@ -112,7 +112,7 @@ The Customer Management System is a comprehensive web application designed to ef
   "state": "Bihar"
 }
 ```
-![img](https://github.com/sunbase-assignment/blob/main/images/3.png)
+![img](https://github.com/raushanraj901/sunbase-assignment/blob/main/images/3.png)
 
 ### Edit a Customer
 
@@ -150,13 +150,13 @@ The Customer Management System is a comprehensive web application designed to ef
 ### Search
 - Use the search functionality to filter customers based on criteria like first name, city, email, and phone. Designed in front-end
 
-![img](https://github.com/sunbase-assignment/blob/main/images/4.png)
+![img](https://github.com/raushanraj901/sunbase-assignment/blob/main/images/4.png)
 
 ### Sync Button And Pagination
 - Located on the customer list screen, this button fetches customer data from a remote API and updates your database. If a customer already exists, their details are updated rather than creating a duplicate entry.
 - Pagination functionality add
 
-![img](https://github.com/sunbase-assignment/blob/main/images/5.png)
+![img](https://github.com/raushanraj901/sunbase-assignment/blob/main/images/5.png)
 
 ## Contact
 For further suggestions, enquiries, or issues, please contact `raushanraj901@gmail.com`
